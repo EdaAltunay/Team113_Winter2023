@@ -16,10 +16,10 @@ public class C04_Exceptions {
 
         Scanner scanner= new Scanner(System.in);
         System.out.println("Lutfen bir tamsayi giriniz");
-        int sayi3= 0;
+        int sayi3= 0; // InputMismatchException
 
         try {
-            sayi3 = scanner.nextInt();   // InputMismatchException
+            sayi3 = scanner.nextInt();
 
         } catch (InputMismatchException e) {
             System.out.println("Sana tamsayi yaz dedikkkkk .... ");
@@ -29,4 +29,8 @@ public class C04_Exceptions {
             System.out.println("sifir giremezsiniz");
         }else{
             System.out.println(sayi1 / sayi3);
-        } } }
+        }
+
+
+    }
+}
